@@ -1,0 +1,93 @@
+html, body, #root {
+  height:100%;
+  background:#fff3e9;
+}
+.board {
+  width:100%;
+  height:100%;
+  /*background:url(./images/5418.jpg) no-repeat;*/
+  background-size:cover;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+}
+
+.sub-board {
+  max-width:33%;
+  flex:0 0 33%;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:flex-start;
+  justify-content:flex-start;
+  box-sizing:border-box;
+  /*height:100%;*/
+  /*border-left:1px solid #ccc;*/
+  /*border-right:1px solid #ccc;*/
+  /*border:20px solid #fff;*/
+}
+.good .post-it {
+  background:#a5ffd1;
+}
+
+.bad .post-it {
+  background:#ffcfa5;
+}
+
+h2 {
+  flex:0 0 100%;
+  text-align:center;
+}
+.post-it {
+  box-sizing:border-box;
+  border:10px solid #fff3e9;
+  flex:0 0 33.332%;
+  max-width:33.332%;
+  height:200px;
+  background:#FFFFA5;
+  display:flex;
+  position:relative;
+}
+.post-it .content {
+  padding:20px;
+  max-width:100%;
+  flex:1 1 100%;
+  box-shadow:0 2px 3px rgba(0,0,0,0.6);
+}
+.post-it .delete {
+  font-weight:bold;
+  display:none;
+  position:absolute;
+  top:4px;
+  right:0;
+  background:transparent;
+  outline:none;
+  border:none;
+  font-size:18px;
+}
+.post-it:hover .delete {
+  display:block;
+  cursor:pointer;
+}
+form {
+  max-width:80%;
+  flex:0 0 100%;
+  display:flex;
+  padding-left:10%;
+  margin-bottom:20px;
+}
+form input {
+  flex:0 1 100%;
+  height:40px;
+  border:1px solid #ccc;
+  padding:0 10px;
+  outline:none;
+  box-sizing:border-box;
+}
+form button {
+  flex:0 0 30px;
+  max-width:30px;
+  font-size:24px;
+  line-height:30px;
+  height:40px;
+  outline:none;
+}
